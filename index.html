@@ -464,9 +464,25 @@
       </a>
       <a href="#contact" class="nav-cta">Get in Touch</a>
     </div>
-    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+    <button class="menu-toggle" aria-label="Menu" onclick="openMobileMenu()">&#9776;</button>
   </nav>
 </header>
+
+<!-- MOBILE MENU DRAWER -->
+<div id="mobile-menu" style="display:none; position:fixed; inset:0; z-index:300; background:var(--ivory);">
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:20px 32px; border-bottom:1px solid var(--line);">
+    <img src="logo.jpeg" alt="Chic & Charm" style="height:48px; width:auto;">
+    <button onclick="closeMobileMenu()" aria-label="Close menu" style="background:none; border:none; font-size:28px; cursor:pointer; color:var(--ink);">&times;</button>
+  </div>
+  <nav style="display:flex; flex-direction:column; padding:32px;">
+    <a href="#collection" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Collection</a>
+    <a href="#story" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Our Story</a>
+    <a href="#craft" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Why Chic &amp; Charm</a>
+    <a href="#contact" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Contact</a>
+    <a href="https://instagram.com/thechicncharm" target="_blank" rel="noopener" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--rani);">Instagram</a>
+    <a href="#contact" onclick="closeMobileMenu()" class="btn btn-primary" style="text-decoration:none; text-align:center; margin-top:28px;">Get in Touch</a>
+  </nav>
+</div>
 
 <main id="top">
 
@@ -517,13 +533,20 @@
 
       <div class="grid">
         <article class="piece">
-          <div class="piece-art" style="background:none; padding:0;">
-            <img src="embroidered-lace-top.jpeg" alt="Chic & Charm embroidered lace-collar top" style="width:100%; height:100%; object-fit:cover; object-position:top; cursor:zoom-in;" onclick="openLightbox('embroidered-lace-top.jpeg')">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹399</div>
+            <img id="img-lace-top" src="top-sage.jpeg" alt="Chic & Charm embroidered lace-collar top" style="width:100%; height:100%; object-fit:cover; object-position:top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-lace-top').src)">
           </div>
           <div class="piece-body">
             <div class="piece-cat">Top</div>
             <div class="piece-name">Lace-Collar Embroidered Top</div>
-            <div class="piece-desc">Floral embroidery, pearl button trim. Available in sage, beige, and cream.</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹399 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-lace-top">Floral embroidery, pearl button trim. Sage.</div>
+            <div style="display:flex; gap:10px; margin-top:14px;">
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-sage.jpeg','Sage','#A7B78C')" aria-label="Sage" style="width:26px; height:26px; border-radius:50%; background:#A7B78C; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-beige.jpeg','Beige','#C7B299')" aria-label="Beige" style="width:26px; height:26px; border-radius:50%; background:#C7B299; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-cream.jpeg','Cream','#F2ECDD')" aria-label="Cream" style="width:26px; height:26px; border-radius:50%; background:#F2ECDD; border:2px solid rgba(36,20,25,0.2); cursor:pointer; padding:0;"></button>
+            </div>
           </div>
         </article>
       </div>
@@ -641,6 +664,15 @@
 </footer>
 
 <script>
+  // Color swatch selector: swap product photo + label when a swatch is tapped
+  function swapColor(imgId, descId, src, colorName, hex){
+    document.getElementById(imgId).src = src;
+    document.getElementById(descId).textContent = 'Floral embroidery, pearl button trim. ' + colorName + '.';
+    // highlight the selected swatch
+    const buttons = document.getElementById(imgId).closest('.piece').querySelectorAll('button[aria-label]');
+    buttons.forEach(b => b.style.border = b.getAttribute('aria-label') === colorName ? '2px solid var(--ink)' : '2px solid transparent');
+  }
+
   // Lightbox: tap a product photo to view it full-size, tap again to close
   function openLightbox(src){
     document.getElementById('lightbox-img').src = src;
@@ -658,10 +690,15 @@
     });
   });
 
-  // Mobile menu placeholder
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-    alert('Add a mobile nav drawer here when you\'re ready to refine responsive behavior.');
-  });
+  // Mobile menu drawer
+  function openMobileMenu(){
+    document.getElementById('mobile-menu').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileMenu(){
+    document.getElementById('mobile-menu').style.display = 'none';
+    document.body.style.overflow = '';
+  }
 </script>
 
 </body>
