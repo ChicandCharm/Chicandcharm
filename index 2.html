@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chic &amp; Charm — Tops, Co-ord Sets, Suits, Dresses &amp; T-Shirts</title>
+<meta name="description" content="Chic & Charm — modern tops, co-ord sets, suits, dresses, and t-shirts, made to move with you.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ivory:#FAF6EF;
+    --ivory-deep:#F1EADC;
+    --ink:#241419;
+    --emerald:#0F5C4C;
+    --emerald-deep:#0A3D33;
+    --gold:#C9932E;
+    --rani:#9C1F4C;
+    --line:rgba(36,20,25,0.12);
+    --max:1180px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html{scroll-behavior:smooth; overflow-x:hidden;}
+
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    overflow-x:hidden;
+    width:100%;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    line-height:1.05;
+  }
+
+  a{color:inherit; text-decoration:none;}
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
+
+  img, svg{display:block; max-width:100%;}
+
+  :focus-visible{outline:2px solid var(--rani); outline-offset:3px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Paisley signature motif ---------- */
+  .paisley{
+    display:inline-block;
+    width:1em; height:1em;
+  }
+
+  .divider-motif{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:0 auto;
+    color:var(--gold);
+  }
+  .divider-motif .rule{
+    height:1px;
+    width:64px;
+    background:linear-gradient(90deg, transparent, currentColor, transparent);
+    opacity:0.6;
+  }
+  .divider-motif svg{width:16px; height:16px;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,246,239,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 32px;
+    max-width:var(--max); margin:0 auto;
+  }
+  .brand{
+    font-family:'Fraunces', serif;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+  }
+  .brand .amp{ color:var(--rani); font-style:italic; font-weight:500;}
+
+  .nav-links{
+    display:flex; gap:36px;
+    font-size:14px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .nav-links a{
+    position:relative;
+    padding-bottom:4px;
+  }
+  .nav-links a::after{
+    content:"";
+    position:absolute; left:0; bottom:0;
+    width:0%; height:1px;
+    background:var(--rani);
+    transition:width 0.25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+
+  .nav-cta{
+    font-size:13px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    border:1px solid var(--ink);
+    padding:10px 20px;
+    border-radius:2px;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  .nav-cta:hover{background:var(--ink); color:var(--ivory);}
+
+  .menu-toggle{display:none; background:none; border:none; font-size:24px; cursor:pointer; color:var(--ink);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    padding:110px 32px 90px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(circle at 85% 15%, rgba(156,31,76,0.10), transparent 45%),
+      radial-gradient(circle at 10% 85%, rgba(15,92,76,0.12), transparent 45%);
+    pointer-events:none;
+  }
+  .hero-inner{
+    max-width:var(--max); margin:0 auto;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:64px;
+    align-items:center;
+    position:relative;
+  }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-size:13px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--emerald-deep);
+    margin-bottom:22px;
+  }
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--rani);}
+
+  .hero h1{
+    font-size:clamp(40px, 5.2vw, 68px);
+    margin-bottom:24px;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--rani);
+    font-weight:500;
+  }
+  .hero p.lead{
+    font-size:18px;
+    max-width:44ch;
+    color:rgba(36,20,25,0.78);
+    margin-bottom:36px;
+  }
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap;}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    font-size:14px; letter-spacing:0.04em; text-transform:uppercase;
+    padding:15px 28px;
+    border-radius:2px;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .btn-primary{
+    background:var(--emerald);
+    color:var(--ivory);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 24px rgba(15,92,76,0.28);}
+  .btn-ghost{
+    border:1px solid var(--ink);
+  }
+  .btn-ghost:hover{transform:translateY(-2px);}
+
+  /* ---------- Section shell ---------- */
+  section{padding:100px 32px;}
+  .section-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+  }
+  .section-head .eyebrow{justify-content:center; width:100%;}
+  .section-head h2{font-size:clamp(30px, 3.6vw, 44px); margin-bottom:16px;}
+  .section-head p{color:rgba(36,20,25,0.7); font-size:16px;}
+
+  /* ---------- Collection ---------- */
+  .collection{background:var(--ivory-deep);}
+  .tabs{
+    display:flex; justify-content:center; flex-wrap:wrap; gap:12px;
+    margin-bottom:48px;
+  }
+  .tab{
+    font-size:13px; letter-spacing:0.06em; text-transform:uppercase;
+    padding:10px 22px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    background:var(--ivory);
+    cursor:pointer;
+    transition:all 0.2s ease;
+  }
+  .tab.active, .tab:hover{
+    background:var(--ink); color:var(--ivory); border-color:var(--ink);
+  }
+
+  .price-filter-btn.active-price{
+    background:var(--ink) !important; color:var(--ivory); border-color:var(--ink) !important;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 340px));
+    justify-content:center;
+    gap:28px;
+  }
+  .piece{
+    background:var(--ivory);
+    border-radius:4px;
+    overflow:hidden;
+    border:1px solid var(--line);
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .piece:hover{transform:translateY(-6px); box-shadow:0 20px 40px rgba(36,20,25,0.14);}
+  .piece-art{
+    height:400px;
+    position:relative;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .piece-art svg{width:64px; height:64px; opacity:0.9;}
+  .piece-body{padding:22px;}
+  .piece-cat{
+    font-size:12px; text-transform:uppercase; letter-spacing:0.08em;
+    color:var(--rani); margin-bottom:6px;
+  }
+  .piece-name{font-family:'Fraunces', serif; font-size:20px; margin-bottom:6px;}
+  .piece-desc{font-size:14px; color:rgba(36,20,25,0.65);}
+
+  .size-chip{
+    display:inline-flex; align-items:center; justify-content:center;
+    min-width:32px; height:32px; padding:0 8px;
+    font-size:13px; font-weight:500;
+    border:1px solid var(--line);
+    border-radius:2px;
+    color:var(--ink);
+    background:var(--ivory);
+    font-family:'Work Sans', sans-serif;
+  }
+  button.size-chip{cursor:pointer; transition:all 0.15s ease;}
+  button.size-chip:hover{border-color:var(--ink);}
+  .size-chip.selected-size{
+    background:var(--ink);
+    color:var(--ivory);
+    border-color:var(--ink);
+  }
+  .size-chip.sold-out{
+    color:rgba(36,20,25,0.35);
+    text-decoration:line-through;
+    border-color:rgba(36,20,25,0.12);
+    background:rgba(36,20,25,0.03);
+  }
+
+  .whatsapp-order-btn{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    width:100%;
+    margin-top:16px;
+    padding:12px;
+    background:#25D366;
+    color:#fff;
+    border:none;
+    border-radius:2px;
+    font-family:'Work Sans', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:filter 0.2s ease;
+  }
+  .whatsapp-order-btn:hover{filter:brightness(0.95);}
+
+  .art-1{background:linear-gradient(150deg, #B23A63, #6C1435);}
+  .art-2{background:linear-gradient(150deg, #D9A441, #8C6215);}
+  .art-3{background:linear-gradient(150deg, #1D7A64, #0A3D33);}
+  .art-4{background:linear-gradient(150deg, #7A4FA0, #3E2059);}
+  .art-5{background:linear-gradient(150deg, #C9932E, #9C1F4C);}
+  .art-6{background:linear-gradient(150deg, #0F5C4C, #24A085);}
+
+  .collection-note{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    color:rgba(36,20,25,0.55);
+    font-style:italic;
+  }
+
+  /* ---------- Story / about ---------- */
+  .story{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:72px;
+    align-items:center;
+    max-width:var(--max);
+    margin:0 auto;
+  }
+  .story-visual{
+    position:relative;
+    height:420px;
+    border-radius:4px;
+    background:linear-gradient(165deg, var(--emerald) 0%, var(--emerald-deep) 60%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .story-visual::after{
+    content:"";
+    position:absolute; inset:0;
+    background-image:repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 1px, transparent 1px 26px);
+  }
+  .story-visual .mark{
+    position:relative; z-index:1;
+    width:120px; height:120px;
+    color:var(--gold);
+    opacity:0.9;
+  }
+  .story h2{font-size:clamp(28px,3.2vw,38px); margin-bottom:22px;}
+  .story p{color:rgba(36,20,25,0.75); margin-bottom:18px; max-width:56ch;}
+  .story-stats{
+    display:flex; gap:48px;
+    margin-top:32px;
+  }
+  .stat .num{font-family:'Fraunces', serif; font-size:32px; color:var(--emerald-deep);}
+  .stat .label{font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:rgba(36,20,25,0.6);}
+
+  /* ---------- Craft strip ---------- */
+  .craft{background:var(--ink); color:var(--ivory);}
+  .craft .section-head p{color:rgba(250,246,239,0.65);}
+  .craft .section-head h2{color:var(--ivory);}
+  .craft-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:40px;
+    max-width:var(--max);
+    margin:0 auto;
+  }
+  .craft-item{text-align:center; padding:0 12px;}
+  .craft-item svg{width:36px; height:36px; margin:0 auto 20px; color:var(--gold);}
+  .craft-item h3{font-size:19px; margin-bottom:10px; color:var(--ivory); font-weight:500;}
+  .craft-item p{font-size:14px; color:rgba(250,246,239,0.62);}
+
+  /* ---------- Contact ---------- */
+  .contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:72px;
+    max-width:var(--max);
+    margin:0 auto;
+    align-items:start;
+  }
+  .contact h2{font-size:clamp(28px,3.2vw,38px); margin-bottom:18px;}
+  .contact p{color:rgba(36,20,25,0.72); margin-bottom:28px; max-width:48ch;}
+  .contact-detail{display:flex; gap:14px; margin-bottom:18px; font-size:15px;}
+  .contact-detail svg{width:18px; height:18px; color:var(--rani); flex-shrink:0; margin-top:2px;}
+
+  form{display:flex; flex-direction:column; gap:18px;}
+  .field label{
+    display:block; font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
+    margin-bottom:8px; color:rgba(36,20,25,0.6);
+  }
+  .field input, .field textarea{
+    width:100%;
+    border:1px solid var(--line);
+    background:var(--ivory-deep);
+    padding:14px 16px;
+    font-family:'Work Sans', sans-serif;
+    font-size:15px;
+    border-radius:2px;
+    color:var(--ink);
+    transition:border-color 0.2s ease;
+  }
+  .field input:focus, .field textarea:focus{border-color:var(--emerald); outline:none;}
+  .field textarea{resize:vertical; min-height:120px;}
+  form .btn-primary{align-self:flex-start; border:none; cursor:pointer;}
+
+  /* ---------- Footer ---------- */
+  footer{
+    border-top:1px solid var(--line);
+    padding:40px 32px;
+  }
+  .footer-inner{
+    max-width:var(--max); margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap; gap:16px;
+    font-size:13px;
+    color:rgba(36,20,25,0.55);
+  }
+  .footer-inner .brand{font-size:16px;}
+  .footer-links{display:flex; gap:24px;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px){
+    .nav-links, .nav-cta{display:none;}
+    .menu-toggle{display:block;}
+    .hero-inner{grid-template-columns:1fr; gap:56px;}
+    .grid{grid-template-columns:repeat(2, 1fr);}
+    .story{grid-template-columns:1fr;}
+    .story-visual{height:280px;}
+    .craft-grid{grid-template-columns:1fr; gap:36px;}
+    .contact{grid-template-columns:1fr; gap:48px;}
+  }
+  @media (max-width: 560px){
+    .grid{grid-template-columns:1fr;}
+    section{padding:72px 20px;}
+    .hero{padding:90px 20px 64px;}
+  }
+</style>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RM7NTKBBYZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RM7NTKBBYZ');
+</script>
+
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="brand"><img src="logo.jpeg" alt="Chic & Charm" style="height:56px; width:auto; display:block;"></a>
+    <div class="nav-links">
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+      <a href="#craft">Craftsmanship</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:20px;">
+      <a href="https://instagram.com/thechicncharm" target="_blank" rel="noopener" aria-label="Instagram" style="display:flex; align-items:center;">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu" onclick="openMobileMenu()">&#9776;</button>
+  </nav>
+</header>
+
+<!-- MOBILE MENU DRAWER -->
+<div id="mobile-menu" style="display:none; position:fixed; inset:0; z-index:300; background:var(--ivory);">
+  <div style="display:flex; justify-content:space-between; align-items:center; padding:20px 32px; border-bottom:1px solid var(--line);">
+    <img src="logo.jpeg" alt="Chic & Charm" style="height:48px; width:auto;">
+    <button onclick="closeMobileMenu()" aria-label="Close menu" style="background:none; border:none; font-size:28px; cursor:pointer; color:var(--ink);">&times;</button>
+  </div>
+  <nav style="display:flex; flex-direction:column; padding:32px;">
+    <div style="margin-bottom:24px;">
+      <div style="font-size:13px; text-transform:uppercase; letter-spacing:0.06em; color:rgba(36,20,25,0.55); margin-bottom:12px;">Filter by Price</div>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <button class="price-filter-btn active-price" onclick="filterByPrice('all', this)" style="padding:10px 18px; border:1px solid var(--line); border-radius:999px; background:var(--ivory); font-size:13px; cursor:pointer;">All Prices</button>
+        <button class="price-filter-btn" onclick="filterByPrice('under1000', this)" style="padding:10px 18px; border:1px solid var(--line); border-radius:999px; background:var(--ivory); font-size:13px; cursor:pointer;">Under ₹1000</button>
+        <button class="price-filter-btn" onclick="filterByPrice('1000to1500', this)" style="padding:10px 18px; border:1px solid var(--line); border-radius:999px; background:var(--ivory); font-size:13px; cursor:pointer;">₹1000 – ₹1500</button>
+        <button class="price-filter-btn" onclick="filterByPrice('above1500', this)" style="padding:10px 18px; border:1px solid var(--line); border-radius:999px; background:var(--ivory); font-size:13px; cursor:pointer;">Above ₹1500</button>
+      </div>
+    </div>
+    <a href="#collection" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Collection</a>
+    <a href="#story" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Our Story</a>
+    <a href="#craft" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Why Chic &amp; Charm</a>
+    <a href="#returns" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:20px; padding:14px 0; border-bottom:1px solid var(--line); color:var(--ink);">Return &amp; Exchange</a>
+    <a href="#terms" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:20px; padding:14px 0; border-bottom:1px solid var(--line); color:var(--ink);">Terms &amp; Conditions</a>
+    <a href="#contact" onclick="closeMobileMenu()" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--ink);">Contact</a>
+    <a href="https://instagram.com/thechicncharm" target="_blank" rel="noopener" style="font-family:'Fraunces', serif; font-size:26px; padding:16px 0; border-bottom:1px solid var(--line); color:var(--rani);">Instagram</a>
+    <a href="#contact" onclick="closeMobileMenu()" class="btn btn-primary" style="text-decoration:none; text-align:center; margin-top:28px;">Get in Touch</a>
+  </nav>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner" style="grid-template-columns:1fr; text-align:center; max-width:720px;">
+      <div>
+        <div class="eyebrow" style="justify-content:center;"><span class="dot"></span> Tops, Co-ord Sets, Suits, Dresses &amp; T-Shirts</div>
+        <h1>Easy style, <em>with charm.</em></h1>
+        <p style="font-family:'Fraunces', serif; font-style:italic; font-size:18px; color:var(--rani); margin-bottom:18px;">Dress with elegance. Shine with grace.</p>
+        <p class="lead" style="margin-left:auto; margin-right:auto;">Chic &amp; Charm designs modern tops and co-ord sets built for everyday wear — easy to style, made to move with you from morning to night.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a href="#collection" class="btn btn-primary">Explore the Collection</a>
+          <a href="#story" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section class="collection" id="collection">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> The Collection</div>
+        <h2>Tops, co-ord sets, suits, dresses &amp; tees, made to be lived in</h2>
+        <p>Each piece is a placeholder in this preview — swap in your own product photography and these cards become your live catalog.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-filter="all" onclick="filterCollection('all', this)">All Pieces</button>
+        <button class="tab" data-filter="top" onclick="filterCollection('top', this)">Tops</button>
+        <button class="tab" data-filter="coord" onclick="filterCollection('coord', this)">Co-ord Sets</button>
+        <button class="tab" data-filter="suit" onclick="filterCollection('suit', this)">Suits</button>
+        <button class="tab" data-filter="tshirt" onclick="filterCollection('tshirt', this)">T-Shirts</button>
+        <button class="tab" data-filter="dress" onclick="filterCollection('dress', this)">Dresses</button>
+      </div>
+
+      <p id="empty-collection-msg" style="display:none; text-align:center; color:rgba(36,20,25,0.55); font-style:italic; margin-bottom:32px;">Nothing here yet — check back soon!</p>
+
+      <div class="grid">
+
+        <article class="piece" data-price="1599" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1599</div>
+            <img id="img-top-denim-rose" src="top-denim-rose.jpeg" alt="Chic & Charm Rose Embroidered Denim Shirt" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-top-denim-rose').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Rose Embroidered Denim Shirt</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1599 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-top-denim-rose">Premium denim, beaded rose motif embroidery, rhinestone detail. Denim Blue.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">3XL</span>
+            </div>
+            <button onclick="openSizeChart('3xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-top-denim-rose" onclick="orderOnWhatsApp('Rose Embroidered Denim Shirt', 1599, 'img-top-denim-rose')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+        <article class="piece" data-price="1699" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1699</div>
+            <img id="img-coord-crochet" src="coord-crochet-ivory.jpeg" alt="Chic & Charm Crochet Lace Peplum Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-crochet').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Crochet Lace Peplum Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1699 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-crochet">All-over crochet lace, peplum top & matching wide-leg pants. Ivory.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-coord-crochet" onclick="orderOnWhatsApp('Crochet Lace Peplum Co-ord Set', 1699, 'img-coord-crochet')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1099" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1099</div>
+            <img id="img-top-chevron" src="top-chevron-cami.jpeg" alt="Chic & Charm Chevron Print Beaded-Strap Cami" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-top-chevron').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Chevron Print Beaded-Strap Cami</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1099 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-top-chevron">Geometric chevron print, wooden bead adjustable straps. Ivory/Black.</div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-top-chevron" onclick="orderOnWhatsApp('Chevron Print Beaded-Strap Cami', 1099, 'img-top-chevron')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="2100" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹2100</div>
+            <img id="img-coord-wrap" src="coord-wrap-pink.jpeg" alt="Chic & Charm Belted Wrap Shirt Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-wrap').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Belted Wrap Shirt Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹2100 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-wrap">Wrap-style belted shirt with wide-leg pants. Blush Pink.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-coord-wrap','desc-coord-wrap','coord-wrap-pink.jpeg','Blush Pink','#D9B8AE')" aria-label="Blush Pink" style="width:26px; height:26px; border-radius:50%; background:#D9B8AE; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-coord-wrap','desc-coord-wrap','coord-wrap-mustard.jpeg','Mustard','#C9A227')" aria-label="Mustard" style="width:26px; height:26px; border-radius:50%; background:#C9A227; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-coord-wrap" onclick="orderOnWhatsApp('Belted Wrap Shirt Co-ord Set', 2100, 'img-coord-wrap')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="999" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹999</div>
+            <img id="img-jacket-pearl" src="jacket-pearl-purple.jpeg" alt="Chic & Charm Pearl-Trim Open Jacket & Cami Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-jacket-pearl').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Pearl-Trim Open Jacket & Cami Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹999 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-jacket-pearl">Lightweight open-front jacket with pearl bead trim, matching cami included. Purple.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-jacket-pearl','desc-jacket-pearl','jacket-pearl-purple.jpeg','Purple','#8B4A8F')" aria-label="Purple" style="width:26px; height:26px; border-radius:50%; background:#8B4A8F; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-jacket-pearl','desc-jacket-pearl','jacket-pearl-olive.jpeg','Olive','#5C6B3D')" aria-label="Olive" style="width:26px; height:26px; border-radius:50%; background:#5C6B3D; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-jacket-pearl','desc-jacket-pearl','jacket-pearl-black.jpeg','Black','#1a1a1a')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#1a1a1a; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('lxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-jacket-pearl" onclick="orderOnWhatsApp('Pearl-Trim Open Jacket & Cami Set', 999, 'img-jacket-pearl')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1699" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1699</div>
+            <img id="img-coord-3piece" src="coord-3piece-taupe.jpeg" alt="Chic & Charm 3-Piece Textured Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-3piece').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">3-Piece Textured Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1699 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-3piece">Shirt, crop cami top & wide-leg pants, embroidered pocket detail. Taupe.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-coord-3piece','desc-coord-3piece','coord-3piece-taupe.jpeg','Taupe','#A99A85')" aria-label="Taupe" style="width:26px; height:26px; border-radius:50%; background:#A99A85; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-coord-3piece','desc-coord-3piece','coord-3piece-mocha.jpeg','Mocha','#7A6857')" aria-label="Mocha" style="width:26px; height:26px; border-radius:50%; background:#7A6857; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('sml')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-coord-3piece" onclick="orderOnWhatsApp('3-Piece Textured Co-ord Set', 1699, 'img-coord-3piece')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1799" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1799</div>
+            <img id="img-coord-flower" src="coord-flower-blue.jpeg" alt="Chic & Charm Contrast-Trim Flower Graphic Co-ord" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-flower').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Contrast-Trim Flower Graphic Co-ord</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1799 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-flower">Oversized tee & wide-leg pants, contrast piping, graphic print. Blue.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-coord-flower','desc-coord-flower','coord-flower-blue.jpeg','Blue','#2451A3')" aria-label="Blue" style="width:26px; height:26px; border-radius:50%; background:#2451A3; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-coord-flower','desc-coord-flower','coord-flower-orange.jpeg','Orange','#E0601F')" aria-label="Orange" style="width:26px; height:26px; border-radius:50%; background:#E0601F; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-coord-flower" onclick="orderOnWhatsApp('Contrast-Trim Flower Graphic Co-ord', 1799, 'img-coord-flower')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1550" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1550</div>
+            <img id="img-coord-denim-emb" src="coord-denim-embroidered.jpeg" alt="Chic & Charm Embroidered Denim Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-denim-emb').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Embroidered Denim Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1550 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-denim-emb">Relaxed shirt & wide-leg pants, embroidered hem detail. Denim Blue.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">2XL</span>
+            </div>
+            <button onclick="openSizeChart('2xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-coord-denim-emb" onclick="orderOnWhatsApp('Embroidered Denim Co-ord Set', 1550, 'img-coord-denim-emb')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="999" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹999</div>
+            <img id="img-top-ombre" src="top-ombre-grey.jpeg" alt="Chic & Charm One-Shoulder Pleated Ombre Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-top-ombre').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">One-Shoulder Pleated Ombre Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹999 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-top-ombre">Sunray pleats, asymmetric one-shoulder neckline, side tie. Grey Ombre.</div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-top-ombre" onclick="orderOnWhatsApp('One-Shoulder Pleated Ombre Top', 999, 'img-top-ombre')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="2000" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹2000</div>
+            <img id="img-jacket-belted" src="jacket-black-belted.jpeg" alt="Chic & Charm Belted Peplum Jacket Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-jacket-belted').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Belted Peplum Jacket Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹2000 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-jacket-belted">Heavy fabric, notch collar, cinched belted waist. Black.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-jacket-belted" onclick="orderOnWhatsApp('Belted Peplum Jacket Top', 2000, 'img-jacket-belted')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1299" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1299</div>
+            <img id="img-dress-twist" src="dress-twist-beige.jpeg" alt="Chic & Charm Twist-Front Tiered Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-dress-twist').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Twist-Front Tiered Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1299 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-dress-twist">Twist-front bodice, tiered ruffle hem, smocked back. Beige.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-dress-twist','desc-dress-twist','dress-twist-beige.jpeg','Beige','#D4B896')" aria-label="Beige" style="width:26px; height:26px; border-radius:50%; background:#D4B896; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-dress-twist','desc-dress-twist','dress-twist-lime.jpeg','Lime Green','#B8CC5E')" aria-label="Lime Green" style="width:26px; height:26px; border-radius:50%; background:#B8CC5E; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-dress-twist','desc-dress-twist','dress-twist-yellow.jpeg','Sunshine Yellow','#F0C93B')" aria-label="Sunshine Yellow" style="width:26px; height:26px; border-radius:50%; background:#F0C93B; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-dress-twist','desc-dress-twist','dress-twist-pink.jpeg','Hot Pink','#E0207E')" aria-label="Hot Pink" style="width:26px; height:26px; border-radius:50%; background:#E0207E; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to L)</span>
+            </div>
+            <button onclick="openSizeChart('freesize_l')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-dress-twist" onclick="orderOnWhatsApp('Twist-Front Tiered Co-ord Set', 1299, 'img-dress-twist')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1700" data-category="dress">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1700</div>
+            <img id="img-top-lily-tie" src="top-lily-orange.jpeg" alt="Chic & Charm Floral Tie-Side Sleeveless Dress" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-top-lily-tie').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Dress</div>
+            <div class="piece-name">Floral Tie-Side Sleeveless Dress</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1700 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-top-lily-tie">Pure cotton, sleeveless round neck, tie-side waist detail. Orange Lily.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('lxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-top-lily-tie" onclick="orderOnWhatsApp('Floral Tie-Side Sleeveless Dress', 1700, 'img-top-lily-tie')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1700" data-category="dress">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1700</div>
+            <img id="img-top-lily-square" src="top-lily-green.jpeg" alt="Chic & Charm Floral Puff-Sleeve Square-Neck Dress" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-top-lily-square').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Dress</div>
+            <div class="piece-name">Floral Puff-Sleeve Square-Neck Dress</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1700 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-top-lily-square">Pure cotton, puff sleeves, square neckline, tie-side waist. Green Lily.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-top-lily-square','desc-top-lily-square','top-lily-green.jpeg','Green Lily','#8A9A5B')" aria-label="Green Lily" style="width:26px; height:26px; border-radius:50%; background:#8A9A5B; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-top-lily-square','desc-top-lily-square','top-lily-pink.jpeg','Pink Lily','#D998B5')" aria-label="Pink Lily" style="width:26px; height:26px; border-radius:50%; background:#D998B5; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-top-lily-square','desc-top-lily-square','top-lily-blue.jpeg','Blue Lily','#5C7FB8')" aria-label="Blue Lily" style="width:26px; height:26px; border-radius:50%; background:#5C7FB8; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('lxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-top-lily-square" onclick="orderOnWhatsApp('Floral Puff-Sleeve Square-Neck Dress', 1700, 'img-top-lily-square')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+        <article class="piece" data-price="1600" data-category="suit">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1600</div>
+            <img id="img-suit-block" src="suit-purple-block.jpeg" alt="Chic & Charm Gold Block-Print Border Suit Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-suit-block').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Suit</div>
+            <div class="piece-name">Gold Block-Print Border Suit Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1600 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-suit-block">Kurti, palazzo & dupatta set with gold block-print border and moon-motif patch. Purple.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-suit-block','desc-suit-block','suit-purple-block.jpeg','Purple','#6B4A7A')" aria-label="Purple" style="width:26px; height:26px; border-radius:50%; background:#6B4A7A; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-suit-block','desc-suit-block','suit-green-block.jpeg','Green','#2E5A3D')" aria-label="Green" style="width:26px; height:26px; border-radius:50%; background:#2E5A3D; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-suit-block','desc-suit-block','suit-rust-block.jpeg','Rust','#B5502E')" aria-label="Rust" style="width:26px; height:26px; border-radius:50%; background:#B5502E; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-suit-block" onclick="orderOnWhatsApp('Gold Block-Print Border Suit Set', 1600, 'img-suit-block')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+        <article class="piece" data-price="1200" data-category="suit">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1200</div>
+            <img id="img-floral-suit" src="suit-floral-pink.jpeg" alt="Chic & Charm Floral Printed Suit Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-floral-suit').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Suit</div>
+            <div class="piece-name">Floral Printed Suit Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1200 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-floral-suit">Kurti, pant & dupatta set with floral print and contrast crochet trim. Rose Pink.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-floral-suit','desc-floral-suit','suit-floral-pink.jpeg','Rose Pink','#C23E5C')" aria-label="Rose Pink" style="width:26px; height:26px; border-radius:50%; background:#C23E5C; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-floral-suit','desc-floral-suit','suit-floral-yellow.jpeg','Yellow','#E8C93A')" aria-label="Yellow" style="width:26px; height:26px; border-radius:50%; background:#E8C93A; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-floral-suit','desc-floral-suit','suit-floral-teal.jpeg','Teal','#1F8A8C')" aria-label="Teal" style="width:26px; height:26px; border-radius:50%; background:#1F8A8C; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Floral Printed Suit Set', 1200, 'img-floral-suit')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1600" data-category="suit">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1600</div>
+            <img id="img-tiedye-suit" src="suit-tiedye-blue.jpeg" alt="Chic & Charm Tie-Dye Embroidered Suit Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-tiedye-suit').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Suit</div>
+            <div class="piece-name">Tie-Dye Embroidered Suit Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1600 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-tiedye-suit">Kurti with embroidered yoke and floral panel, paired with a tie-dye dupatta.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('lxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Tie-Dye Embroidered Suit Set', 1600, 'img-tiedye-suit')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+        <article class="piece" data-price="1200" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1200</div>
+            <img id="img-mountain-top" src="top-mountain-print.jpeg" alt="Chic & Charm Mountain Print Collared Shirt" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-mountain-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Mountain Print Collared Shirt</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1200 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-mountain-top">Relaxed collared shirt with a scenic mountain landscape print at the hem.</div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Mountain Print Collared Shirt', 1200, 'img-mountain-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="799" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹799</div>
+            <img id="img-vneck-top" src="top-vneck-black.jpeg" alt="Chic & Charm V-Neck Embroidered Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-vneck-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">V-Neck Embroidered Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹799 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-vneck-top">Floral embroidery, pearl buttons, lace trim. Black.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-vneck-top','desc-vneck-top','top-vneck-black.jpeg','Black','#1a1a1a')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#1a1a1a; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-vneck-top','desc-vneck-top','top-vneck-cream.jpeg','Cream','#F2ECDD')" aria-label="Cream" style="width:26px; height:26px; border-radius:50%; background:#F2ECDD; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-vneck-top','desc-vneck-top','top-vneck-white.jpeg','White','#FFFFFF')" aria-label="White" style="width:26px; height:26px; border-radius:50%; background:#FFFFFF; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('xlonly')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('V-Neck Embroidered Top', 799, 'img-vneck-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹599</div>
+            <img id="img-collared-top" src="top-collared-mauve.jpeg" alt="Chic & Charm Pearl Placket Collared Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-collared-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Pearl Placket Collared Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹599 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-collared-top">Textured fabric, pearl-trim placket, relaxed collar. Mauve.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-collared-top','desc-collared-top','top-collared-mauve.jpeg','Mauve','#B98494')" aria-label="Mauve" style="width:26px; height:26px; border-radius:50%; background:#B98494; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-collared-top','desc-collared-top','top-collared-black.jpeg','Black','#1a1a1a')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#1a1a1a; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-collared-top','desc-collared-top','top-collared-brown.jpeg','Brown','#8B5A2B')" aria-label="Brown" style="width:26px; height:26px; border-radius:50%; background:#8B5A2B; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Pearl Placket Collared Top', 599, 'img-collared-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="799" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹799</div>
+            <img id="img-peplum-top" src="top-peplum-camel.jpeg" alt="Chic & Charm Striped Tie-Front Peplum Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-peplum-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Striped Tie-Front Peplum Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹799 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-peplum-top">Striped panel with tie-front detail, peplum silhouette. Camel.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','top-peplum-camel.jpeg','Camel','#C9A87C')" aria-label="Camel" style="width:26px; height:26px; border-radius:50%; background:#C9A87C; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','top-peplum-black.jpeg','Black','#1a1a1a')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#1a1a1a; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','top-peplum-cream.jpeg','Cream','#F2ECDD')" aria-label="Cream" style="width:26px; height:26px; border-radius:50%; background:#F2ECDD; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('lxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Striped Tie-Front Peplum Top', 799, 'img-peplum-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1499" data-category="coord">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1499</div>
+            <img id="img-coord-sage" src="coord-sage-shimmer.jpeg" alt="Chic & Charm Shimmer Embellished Co-ord Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-coord-sage').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Co-ord Set</div>
+            <div class="piece-name">Shimmer Embellished Co-ord Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1499 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-coord-sage">Gold embellished collar, matching wide-leg pants. Sage.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('mxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Shimmer Embellished Co-ord Set', 1499, 'img-coord-sage')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="350" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹350</div>
+            <img id="img-ikat-top" src="top-ikat-blue.jpeg" alt="Chic & Charm Ikat Print Lace-Up Top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-ikat-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Ikat Print Lace-Up Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹350 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-ikat-top">Square neck, corset-style lace-up back detail. Blue.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('mxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Ikat Print Lace-Up Top', 350, 'img-ikat-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1599" data-category="suit">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1599</div>
+            <img id="img-suit-peach" src="suit-peach-embroidered.jpeg" alt="Chic & Charm Embroidered Sharara Suit Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-suit-peach').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Suit</div>
+            <div class="piece-name">Embroidered Sharara Suit Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1599 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-suit-peach">Kurti, sharara & net dupatta with maroon embroidered yoke. Peach.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('mxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Embroidered Sharara Suit Set', 1599, 'img-suit-peach')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+        <article class="piece" data-price="999" data-category="suit">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹999</div>
+            <img id="img-suit-olive" src="suit-olive-circle.jpeg" alt="Chic & Charm Circle Embroidered Suit Set" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-suit-olive').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Suit</div>
+            <div class="piece-name">Circle Embroidered Suit Set</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹999 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-suit-olive">Kurti, palazzo & dupatta set, circular embroidery detail. Olive.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+              <span class="size-chip">XXL</span>
+            </div>
+            <button onclick="openSizeChart('mxxl')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Circle Embroidered Suit Set', 999, 'img-suit-olive')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-vespa">₹599 – ₹699</span></div>
+            <img id="img-vespa" src="tee-vespa-cream.jpeg" alt="Chic & Charm Vespa Scooter Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-vespa').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">Vespa Scooter Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-vespa">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-vespa">Oversized fit, front print. Cream.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'vespa', 'Vespa Scooter Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'vespa', 'Vespa Scooter Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'vespa', 'Vespa Scooter Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'vespa', 'Vespa Scooter Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-vespa" onclick="orderOnWhatsApp('Vespa Scooter Graphic Tee', 599, 'img-vespa')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-batman">₹599 – ₹699</span></div>
+            <img id="img-batman" src="tee-batman-white.jpeg" alt="Chic & Charm Batman Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-batman').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">Batman Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-batman">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-batman">Oversized fit, front print. White.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'batman', 'Batman Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'batman', 'Batman Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'batman', 'Batman Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'batman', 'Batman Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-batman" onclick="orderOnWhatsApp('Batman Graphic Tee', 599, 'img-batman')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-bratz">₹599 – ₹699</span></div>
+            <img id="img-bratz" src="tee-bratz-offwhite.jpeg" alt="Chic & Charm Bratz Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-bratz').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">Bratz Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-bratz">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-bratz">Oversized fit, front print. Off-White.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'bratz', 'Bratz Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'bratz', 'Bratz Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'bratz', 'Bratz Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'bratz', 'Bratz Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-bratz" onclick="orderOnWhatsApp('Bratz Graphic Tee', 599, 'img-bratz')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-teddy">₹599 – ₹699</span></div>
+            <img id="img-teddy" src="tee-teddy-white.jpeg" alt="Chic & Charm Teddy Bear Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-teddy').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">Teddy Bear Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-teddy">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-teddy">Oversized fit, front print. White.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-teddy','desc-teddy','tee-teddy-white.jpeg','White','#F5F1E8')" aria-label="White" style="width:26px; height:26px; border-radius:50%; background:#F5F1E8; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-teddy','desc-teddy','tee-teddy-blue.jpeg','Blue','#1B3FA0')" aria-label="Blue" style="width:26px; height:26px; border-radius:50%; background:#1B3FA0; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'teddy', 'Teddy Bear Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'teddy', 'Teddy Bear Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'teddy', 'Teddy Bear Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'teddy', 'Teddy Bear Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-teddy" onclick="orderOnWhatsApp('Teddy Bear Graphic Tee', 599, 'img-teddy')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-rabbit">₹599 – ₹699</span></div>
+            <img id="img-rabbit" src="tee-rabbit-black.jpeg" alt="Chic & Charm 'Judge Me' Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-rabbit').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">'Judge Me' Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-rabbit">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-rabbit">Oversized fit, front print. Black.</div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'rabbit', '\'Judge Me\' Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'rabbit', '\'Judge Me\' Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'rabbit', '\'Judge Me\' Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'rabbit', '\'Judge Me\' Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-rabbit" onclick="orderOnWhatsApp('\'Judge Me\' Graphic Tee', 599, 'img-rabbit')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-tomjerry">₹599 – ₹699</span></div>
+            <img id="img-tomjerry" src="tee-tomjerry-white.jpeg" alt="Chic & Charm Tom & Jerry Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-tomjerry').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">Tom &amp; Jerry Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-tomjerry">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-tomjerry">Oversized fit, front & back print. White.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-tomjerry','desc-tomjerry','tee-tomjerry-white.jpeg','White','#F5F1E8')" aria-label="White" style="width:26px; height:26px; border-radius:50%; background:#F5F1E8; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-tomjerry','desc-tomjerry','tee-tomjerry-blue.jpeg','Blue','#1B3FA0')" aria-label="Blue" style="width:26px; height:26px; border-radius:50%; background:#1B3FA0; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'tomjerry', 'Tom &amp; Jerry Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'tomjerry', 'Tom &amp; Jerry Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'tomjerry', 'Tom &amp; Jerry Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'tomjerry', 'Tom &amp; Jerry Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-tomjerry" onclick="orderOnWhatsApp('Tom &amp; Jerry Graphic Tee', 599, 'img-tomjerry')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="599" data-category="tshirt">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);"><span id="badge-kaleshi">₹599 – ₹699</span></div>
+            <img id="img-kaleshi" src="tee-kaleshi-black.jpeg" alt="Chic & Charm 'Kaleshi' Graphic Tee" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-kaleshi').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">T-Shirt</div>
+            <div class="piece-name">'Kaleshi' Graphic Tee</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;"><span id="priceline-kaleshi">₹599 – ₹699</span> <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-kaleshi">Oversized fit, front & back print. Black.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-kaleshi','desc-kaleshi','tee-kaleshi-black.jpeg','Black','#1a1a1a')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#1a1a1a; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-kaleshi','desc-kaleshi','tee-kaleshi-offwhite.jpeg','Off-White','#EDE6D6')" aria-label="Off-White" style="width:26px; height:26px; border-radius:50%; background:#EDE6D6; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'kaleshi', '\'Kaleshi\' Graphic Tee')">M</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 599, 'kaleshi', '\'Kaleshi\' Graphic Tee')">L</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'kaleshi', '\'Kaleshi\' Graphic Tee')">XL</button>
+              <button class="size-chip" onclick="selectTshirtSize(this, 699, 'kaleshi', '\'Kaleshi\' Graphic Tee')">XXL</button>
+            </div>
+            <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:8px;">M/L: ₹599 &nbsp;•&nbsp; XL/XXL: ₹699 — tap a size to select</p>
+            <button onclick="openSizeChart('tshirt')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button id="wabtn-kaleshi" onclick="orderOnWhatsApp('\'Kaleshi\' Graphic Tee', 599, 'img-kaleshi')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="799" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹799</div>
+            <img id="img-floral-jacket" src="jacket-pink.jpeg" alt="Chic & Charm 3D floral applique crop jacket" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-floral-jacket').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">3D Floral Applique Crop Jacket</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹799 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-floral-jacket">Handcrafted 3D floral applique, cropped fit, pearl buttons. Pink.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-floral-jacket','desc-floral-jacket','jacket-pink.jpeg','Pink','#B0417E')" aria-label="Pink" style="width:26px; height:26px; border-radius:50%; background:#B0417E; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-floral-jacket','desc-floral-jacket','jacket-black.jpeg','Black','#3A3A3A')" aria-label="Black" style="width:26px; height:26px; border-radius:50%; background:#3A3A3A; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="size-chip">S</span>
+              <span class="size-chip">M</span>
+              <span class="size-chip">L</span>
+              <span class="size-chip">XL</span>
+            </div>
+            <button onclick="openSizeChart('sml')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('3D Floral Applique Crop Jacket', 799, 'img-floral-jacket')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+    
+        </article>
+
+        <article class="piece" data-price="1199" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1199</div>
+            <img id="img-vine-top" src="vine-olive.jpeg" alt="Chic & Charm floral vine embroidered top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-vine-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Floral Vine Embroidered Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1199 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-vine-top">Butterfly lace collar, vine floral embroidery. Olive.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-vine-top','desc-vine-top','vine-olive.jpeg','Olive','#6E6B47')" aria-label="Olive" style="width:26px; height:26px; border-radius:50%; background:#6E6B47; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-vine-top','desc-vine-top','vine-peach.jpeg','Peach','#EAC9C2')" aria-label="Peach" style="width:26px; height:26px; border-radius:50%; background:#EAC9C2; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-vine-top','desc-vine-top','vine-blue.jpeg','Blue','#C7DCE3')" aria-label="Blue" style="width:26px; height:26px; border-radius:50%; background:#C7DCE3; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-vine-top','desc-vine-top','vine-cream.jpeg','Cream','#F2ECDD')" aria-label="Cream" style="width:26px; height:26px; border-radius:50%; background:#F2ECDD; border:2px solid rgba(36,20,25,0.2); cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Floral Vine Embroidered Top', 1199, 'img-vine-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="499" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹499</div>
+            <img id="img-peplum-top" src="peplum-green.jpeg" alt="Chic & Charm embroidered peplum top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-peplum-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Cinch-Waist Embroidered Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹499 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-peplum-top">Floral embroidery, elasticated waist, collared. Green.</div>
+            <div style="display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;">
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','peplum-green.jpeg','Green','#A9C36B')" aria-label="Green" style="width:26px; height:26px; border-radius:50%; background:#A9C36B; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','peplum-pink.jpeg','Pink','#E8AFC0')" aria-label="Pink" style="width:26px; height:26px; border-radius:50%; background:#E8AFC0; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','peplum-blue.jpeg','Blue','#AECBE0')" aria-label="Blue" style="width:26px; height:26px; border-radius:50%; background:#AECBE0; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','peplum-purple.jpeg','Purple','#C7B3DE')" aria-label="Purple" style="width:26px; height:26px; border-radius:50%; background:#C7B3DE; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-peplum-top','desc-peplum-top','peplum-yellow.jpeg','Yellow','#E9D68C')" aria-label="Yellow" style="width:26px; height:26px; border-radius:50%; background:#E9D68C; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Cinch-Waist Embroidered Top', 499, 'img-peplum-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+        <article class="piece" data-price="1199" data-category="top">
+          <div class="piece-art" style="background:none; padding:0; position:relative;">
+            <div style="position:absolute; top:14px; left:14px; z-index:2; background:var(--ivory); color:var(--ink); font-family:'Fraunces', serif; font-weight:600; font-size:15px; padding:6px 14px; border-radius:2px; box-shadow:0 6px 16px rgba(36,20,25,0.18);">₹1199</div>
+            <img id="img-lace-top" src="top-sage.jpeg" alt="Chic & Charm embroidered lace-collar top" style="width:100%; height:100%; object-fit:cover; object-position:center top; cursor:zoom-in;" onclick="openLightbox(document.getElementById('img-lace-top').src)">
+          </div>
+          <div class="piece-body">
+            <div class="piece-cat">Top</div>
+            <div class="piece-name">Lace-Collar Embroidered Top</div>
+            <div style="font-family:'Fraunces', serif; font-size:18px; color:var(--rani); margin:2px 0 8px;">₹1199 <span style="font-family:'Work Sans', sans-serif; font-size:12px; color:rgba(36,20,25,0.55); font-weight:400;">+ shipping</span></div>
+            <div class="piece-desc" id="desc-lace-top">Floral embroidery, pearl button trim. Sage.</div>
+            <div style="display:flex; gap:10px; margin-top:14px;">
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-sage.jpeg','Sage','#A7B78C')" aria-label="Sage" style="width:26px; height:26px; border-radius:50%; background:#A7B78C; border:2px solid var(--ink); cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-beige.jpeg','Beige','#C7B299')" aria-label="Beige" style="width:26px; height:26px; border-radius:50%; background:#C7B299; border:2px solid transparent; cursor:pointer; padding:0;"></button>
+              <button onclick="swapColor('img-lace-top','desc-lace-top','top-cream.jpeg','Cream','#F2ECDD')" aria-label="Cream" style="width:26px; height:26px; border-radius:50%; background:#F2ECDD; border:2px solid rgba(36,20,25,0.2); cursor:pointer; padding:0;"></button>
+            </div>
+            <div style="margin-top:16px;">
+              <span class="size-chip">Free Size (fits up to XL)</span>
+            </div>
+            <button onclick="openSizeChart('freesize')" style="background:none; border:none; text-decoration:underline; font-size:13px; color:rgba(36,20,25,0.6); cursor:pointer; padding:0; margin-top:10px; display:block;">Size Chart</button>
+            <button onclick="orderOnWhatsApp('Lace-Collar Embroidered Top', 1199, 'img-lace-top')" class="whatsapp-order-btn">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+              Order on WhatsApp
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="collection-note">More pieces coming soon — this is just the beginning.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story">
+    <div class="story wrap">
+      <div class="story-visual">
+        <svg class="mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M50 8c-10 10-10 20-4 26-14 0-28 10-34 24l10 10 10-6v38h56V62l10 6 10-10c-6-14-20-24-34-24 6-6 6-16-4-26z"/>
+        </svg>
+      </div>
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Our Story</div>
+        <h2>Started together, one piece at a time</h2>
+        <p>Chic &amp; Charm was started by sisters-in-law who wanted more than just another closet of clothes — they wanted pieces that felt special. What began as a shared idea between them is still just the beginning.</p>
+        <p>Every top and co-ord set in this collection was found one by one — through trips to Delhi, Mumbai, and China — hand-picked rather than mass-ordered, because that's how we'd want to shop for ourselves too. We're based in Ludhiana.</p>
+        <div class="story-stats">
+          <div class="stat"><div class="num">2026</div><div class="label">Founded</div></div>
+          <div class="stat"><div class="num">One</div><div class="label">Piece at a time</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRAFT -->
+  <section class="craft" id="craft">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Why Chic &amp; Charm</div>
+        <h2>What sets each piece apart</h2>
+        <p>Three commitments behind everything we make.</p>
+      </div>
+      <div class="craft-grid">
+        <div class="craft-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4L12 2z"/></svg>
+          <h3>Handcrafted Detail</h3>
+          <p>Embroidery, mirror-work, and dori detailing done by hand, not machine.</p>
+        </div>
+        <div class="craft-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3>Everyday Comfort</h3>
+          <p>Breathable fabrics and easy silhouettes built for real, all-day wear.</p>
+        </div>
+        <div class="craft-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-8h6v8"/></svg>
+          <h3>Rooted in Tradition</h3>
+          <p>Thoughtful prints and details that give every piece its own personality.</p>
+        </div>
+        <div class="craft-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 4h16v4H4z"/><path d="M9 8v12h6V8"/><path d="M9 4L7 8"/><path d="M15 4l2 4"/></svg>
+          <h3>Our Own T-Shirt Line</h3>
+          <p>Designed and printed in-house — an in-house brand, not outsourced.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETURN & EXCHANGE POLICY -->
+  <section id="returns" style="background:var(--ivory-deep);">
+    <div class="wrap" style="max-width:760px;">
+      <div class="section-head">
+        <div class="eyebrow" style="justify-content:center;"><span class="dot"></span> Policies</div>
+        <h2>Return &amp; Exchange Policy</h2>
+      </div>
+      <div style="font-size:15px; color:rgba(36,20,25,0.78); line-height:1.8;">
+        <p style="margin-bottom:18px;">At Chic &amp; Charm, we want you to love what you order. If something isn't right, here's how we can help.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Return &amp; Exchange Window</h3>
+        <p style="margin-bottom:18px;">You can request a return or exchange within <strong>30 days</strong> of the delivery date.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Eligibility</h3>
+        <p style="margin-bottom:18px;">To be eligible, the item must be unused and unwashed (tried on only for fit and sizing), with all original tags and packaging intact. Exchanges for a different size are welcome as long as the item meets this condition. Items that are damaged, defective, or not what you ordered are also covered.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">How to Request a Return or Exchange</h3>
+        <p style="margin-bottom:18px;">Message us on WhatsApp or email within 30 days of delivery with your order details and, if there's a damage or defect, a clear photo of the issue. We'll arrange a pickup where available, or share instructions for sending the item back to us.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Refunds</h3>
+        <p style="margin-bottom:0;">Once we receive and inspect the returned item, we'll process your exchange or refund within 7-10 working days. We do not accept returns or exchanges on used or altered products.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERMS & CONDITIONS -->
+  <section id="terms">
+    <div class="wrap" style="max-width:760px;">
+      <div class="section-head">
+        <div class="eyebrow" style="justify-content:center;"><span class="dot"></span> Policies</div>
+        <h2>Terms &amp; Conditions</h2>
+      </div>
+      <div style="font-size:15px; color:rgba(36,20,25,0.78); line-height:1.8;">
+        <p style="margin-bottom:18px;">By ordering from Chic &amp; Charm, you agree to the following terms.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Orders &amp; Availability</h3>
+        <p style="margin-bottom:18px;">All orders are subject to availability. Since many of our pieces are sourced in limited quantities, an item may sell out before your order is confirmed — in that case, we'll let you know and offer an alternative or a full refund.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Pricing</h3>
+        <p style="margin-bottom:18px;">All prices are listed in INR and exclude shipping unless stated otherwise. Prices are subject to change without prior notice.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Product Variation</h3>
+        <p style="margin-bottom:18px;">Since several of our pieces feature hand embroidery and natural fabrics, slight variation in color, print placement, or embroidery detail between the photo and the product you receive is normal and not considered a defect. Screen settings may also affect how colors appear.</p>
+
+        <h3 style="font-family:'Fraunces', serif; font-size:18px; margin:24px 0 10px; color:var(--ink);">Contact</h3>
+        <p style="margin-bottom:0;">Questions about an order or these terms can be sent to us anytime via WhatsApp, call, or email — see our Contact section below.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap" style="max-width:720px; text-align:center;">
+      <div class="eyebrow" style="justify-content:center;"><span class="dot"></span> Get in Touch</div>
+      <h2 style="font-size:clamp(28px,3.2vw,38px); margin-bottom:18px;">Let's talk fabric, fit, or a custom order</h2>
+      <p style="color:rgba(36,20,25,0.72); margin:0 auto 40px; max-width:48ch;">Whether you're asking about sizing, a bulk order, or a custom design — reach out directly, we'd love to hear from you.</p>
+
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:16px; margin-bottom:44px;">
+        <a href="tel:+917814103972" class="btn btn-primary" style="text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call Us
+        </a>
+        <a href="https://wa.me/917814103972" target="_blank" rel="noopener" class="btn btn-ghost" style="text-decoration:none; border-color:#25D366; color:#1a7a43;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z"/></svg>
+          WhatsApp
+        </a>
+        <a href="mailto:chicandcharm26@gmail.com" class="btn btn-ghost" style="text-decoration:none;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+          Email Us
+        </a>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:14px; align-items:center; font-size:15px; color:rgba(36,20,25,0.75);">
+        <div class="contact-detail" style="margin:0;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+          <span>chicandcharm26@gmail.com</span>
+        </div>
+        <div class="contact-detail" style="margin:0;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.4c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg>
+          <span>+91 78141 03972</span>
+        </div>
+        <div class="contact-detail" style="margin:0;">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          <span><a href="https://instagram.com/thechicncharm" target="_blank" rel="noopener">@thechicncharm</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; inset:0; z-index:200; background:rgba(36,20,25,0.92); align-items:center; justify-content:center; padding:24px; cursor:zoom-out;">
+    <img id="lightbox-img" src="" alt="" style="max-width:100%; max-height:90vh; border-radius:4px; box-shadow:0 24px 60px rgba(0,0,0,0.4);">
+  </div>
+
+  <!-- SIZE CHART MODAL -->
+  <div id="size-chart-modal" style="display:none; position:fixed; inset:0; z-index:210; background:rgba(36,20,25,0.6); align-items:center; justify-content:center; padding:20px;" onclick="if(event.target === this) closeSizeChart()">
+    <div style="background:var(--ivory); max-width:480px; width:100%; max-height:85vh; overflow-y:auto; border-radius:4px; padding:32px; position:relative;">
+      <button onclick="closeSizeChart()" aria-label="Close size chart" style="position:absolute; top:16px; right:16px; background:none; border:none; font-size:26px; cursor:pointer; color:var(--ink);">&times;</button>
+      <h3 style="font-family:'Fraunces', serif; font-size:24px; margin-bottom:6px;">Size Chart</h3>
+      <p style="font-size:13px; color:rgba(36,20,25,0.55); margin-bottom:24px;">Measurements in inches. For the best fit, compare with a similar garment you already own.</p>
+
+      <div id="size-chart-freesize">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">Free Size (fits up to XL)</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px; margin-bottom:24px;">
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Bust</td><td style="padding:8px 0; text-align:right;">36" – 40"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Length</td><td style="padding:8px 0; text-align:right;">26"</td></tr>
+          <tr><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Sleeve</td><td style="padding:8px 0; text-align:right;">Elbow-length</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-sml">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">S – XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Bust</th><th style="text-align:right; padding:8px 0; font-weight:600;">Waist</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">S</td><td style="padding:8px 0; text-align:right;">34"</td><td style="padding:8px 0; text-align:right;">28"</td><td style="padding:8px 0; text-align:right;">25"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">M</td><td style="padding:8px 0; text-align:right;">36"</td><td style="padding:8px 0; text-align:right;">30"</td><td style="padding:8px 0; text-align:right;">25.5"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">38"</td><td style="padding:8px 0; text-align:right;">32"</td><td style="padding:8px 0; text-align:right;">26"</td></tr>
+          <tr><td style="padding:8px 0;">XL</td><td style="padding:8px 0; text-align:right;">40"</td><td style="padding:8px 0; text-align:right;">34"</td><td style="padding:8px 0; text-align:right;">26.5"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-tshirt">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">M – XXL (Oversized Fit)</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Chest</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">M</td><td style="padding:8px 0; text-align:right;">42"</td><td style="padding:8px 0; text-align:right;">27"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">44"</td><td style="padding:8px 0; text-align:right;">28"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">XL</td><td style="padding:8px 0; text-align:right;">46"</td><td style="padding:8px 0; text-align:right;">29"</td></tr>
+          <tr><td style="padding:8px 0;">XXL</td><td style="padding:8px 0; text-align:right;">48"</td><td style="padding:8px 0; text-align:right;">30"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-mxxl">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">M – XXL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Bust</th><th style="text-align:right; padding:8px 0; font-weight:600;">Waist</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">M</td><td style="padding:8px 0; text-align:right;">36"</td><td style="padding:8px 0; text-align:right;">30"</td><td style="padding:8px 0; text-align:right;">42"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">38"</td><td style="padding:8px 0; text-align:right;">32"</td><td style="padding:8px 0; text-align:right;">42.5"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">XL</td><td style="padding:8px 0; text-align:right;">40"</td><td style="padding:8px 0; text-align:right;">34"</td><td style="padding:8px 0; text-align:right;">43"</td></tr>
+          <tr><td style="padding:8px 0;">XXL</td><td style="padding:8px 0; text-align:right;">42"</td><td style="padding:8px 0; text-align:right;">36"</td><td style="padding:8px 0; text-align:right;">43.5"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-mxl">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">M – XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Bust</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">M</td><td style="padding:8px 0; text-align:right;">36"</td><td style="padding:8px 0; text-align:right;">25"</td></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">38"</td><td style="padding:8px 0; text-align:right;">25.5"</td></tr>
+          <tr><td style="padding:8px 0;">XL</td><td style="padding:8px 0; text-align:right;">40"</td><td style="padding:8px 0; text-align:right;">26"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-lxl">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">L – XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Bust</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">38"</td><td style="padding:8px 0; text-align:right;">24"</td></tr>
+          <tr><td style="padding:8px 0;">XL</td><td style="padding:8px 0; text-align:right;">40"</td><td style="padding:8px 0; text-align:right;">24.5"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-xlonly">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Bust</td><td style="padding:8px 0; text-align:right;">40"</td></tr>
+          <tr><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Length</td><td style="padding:8px 0; text-align:right;">24"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-2xlonly">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">2XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Bust</td><td style="padding:8px 0; text-align:right;">42"</td></tr>
+          <tr><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Length</td><td style="padding:8px 0; text-align:right;">27"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-3xlonly">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">3XL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Bust</td><td style="padding:8px 0; text-align:right;">44"</td></tr>
+          <tr><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Length</td><td style="padding:8px 0; text-align:right;">28"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-lxxl">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">L, XXL</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><th style="text-align:left; padding:8px 0; font-weight:600;">Size</th><th style="text-align:right; padding:8px 0; font-weight:600;">Bust</th><th style="text-align:right; padding:8px 0; font-weight:600;">Length</th></tr>
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0;">L</td><td style="padding:8px 0; text-align:right;">38"</td><td style="padding:8px 0; text-align:right;">22"</td></tr>
+          <tr><td style="padding:8px 0;">XXL</td><td style="padding:8px 0; text-align:right;">42"</td><td style="padding:8px 0; text-align:right;">23"</td></tr>
+        </table>
+      </div>
+
+      <div id="size-chart-freesize_l">
+        <h4 style="font-family:'Fraunces', serif; font-size:17px; margin-bottom:10px; color:var(--rani);">Free Size (fits up to L)</h4>
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <tr style="border-bottom:1px solid var(--line);"><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Bust</td><td style="padding:8px 0; text-align:right;">32" – 38"</td></tr>
+          <tr><td style="padding:8px 0; color:rgba(36,20,25,0.6);">Length</td><td style="padding:8px 0; text-align:right;">32" (mini)</td></tr>
+        </table>
+      </div>
+
+      <p style="font-size:12px; color:rgba(36,20,25,0.5); margin-top:24px;">Measurements are approximate and may vary slightly by style. Message us on WhatsApp if you're unsure which size to pick.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="brand"><img src="logo.jpeg" alt="Chic & Charm" style="height:40px; width:auto; display:block;"></div>
+    <div class="footer-links">
+      <a href="#collection">Collection</a>
+      <a href="#story">Our Story</a>
+      <a href="#returns">Returns &amp; Exchange</a>
+      <a href="#terms">Terms &amp; Conditions</a>
+      <a href="#contact">Contact</a>
+      <a href="https://instagram.com/thechicncharm" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div>&copy; 2026 Chic &amp; Charm. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Color swatch selector: swap product photo + label when a swatch is tapped
+  function swapColor(imgId, descId, src, colorName, hex){
+    document.getElementById(imgId).src = src;
+    document.getElementById(descId).textContent = 'Floral embroidery, pearl button trim. ' + colorName + '.';
+    // highlight the selected swatch
+    const buttons = document.getElementById(imgId).closest('.piece').querySelectorAll('button[aria-label]');
+    buttons.forEach(b => b.style.border = b.getAttribute('aria-label') === colorName ? '2px solid var(--ink)' : '2px solid transparent');
+  }
+
+  // Lightbox: tap a product photo to view it full-size, tap again to close
+  function openLightbox(src){
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+  function closeLightbox(){
+    document.getElementById('lightbox').style.display = 'none';
+  }
+
+  // Size chart modal: shows the relevant table (Free Size or S-XL) based on the product
+  function openSizeChart(type){
+    document.getElementById('size-chart-freesize').style.display = type === 'freesize' ? 'block' : 'none';
+    document.getElementById('size-chart-sml').style.display = type === 'sml' ? 'block' : 'none';
+    document.getElementById('size-chart-tshirt').style.display = type === 'tshirt' ? 'block' : 'none';
+    document.getElementById('size-chart-mxxl').style.display = type === 'mxxl' ? 'block' : 'none';
+    document.getElementById('size-chart-mxl').style.display = type === 'mxl' ? 'block' : 'none';
+    document.getElementById('size-chart-lxl').style.display = type === 'lxl' ? 'block' : 'none';
+    document.getElementById('size-chart-xlonly').style.display = type === 'xlonly' ? 'block' : 'none';
+    document.getElementById('size-chart-2xlonly').style.display = type === '2xlonly' ? 'block' : 'none';
+    document.getElementById('size-chart-3xlonly').style.display = type === '3xlonly' ? 'block' : 'none';
+    document.getElementById('size-chart-lxxl').style.display = type === 'lxxl' ? 'block' : 'none';
+    document.getElementById('size-chart-freesize_l').style.display = type === 'freesize_l' ? 'block' : 'none';
+    document.getElementById('size-chart-modal').style.display = 'flex';
+  }
+  function closeSizeChart(){
+    document.getElementById('size-chart-modal').style.display = 'none';
+  }
+
+  // Send a pre-filled WhatsApp message for a specific product
+  function orderOnWhatsApp(productName, price, imgId){
+    const img = document.getElementById(imgId);
+    const imgUrl = img ? img.src : '';
+    const message = `Hi! I'd like to order the ${productName} (₹${price}).\n${imgUrl}\nCould you help me place this order?`;
+    window.open('https://wa.me/917814103972?text=' + encodeURIComponent(message), '_blank');
+  }
+
+  // T-shirt tiered pricing: M/L are ₹599, XL/XXL are ₹699 — update price display and WhatsApp button when a size is tapped
+  function selectTshirtSize(sizeBtn, price, pid, productName){
+    const siblingChips = sizeBtn.parentElement.querySelectorAll('.size-chip');
+    siblingChips.forEach(c => c.classList.remove('selected-size'));
+    sizeBtn.classList.add('selected-size');
+
+    document.getElementById('badge-' + pid).textContent = '₹' + price;
+    document.getElementById('priceline-' + pid).textContent = '₹' + price;
+
+    const waBtn = document.getElementById('wabtn-' + pid);
+    waBtn.setAttribute('onclick', `orderOnWhatsApp('${productName}', ${price}, 'img-${pid}')`);
+  }
+
+  // Collection filtering: show only products matching the selected category
+  let currentCategory = 'all';
+  let currentPriceRange = 'all';
+
+  function filterCollection(category, tabEl){
+    currentCategory = category;
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tabEl.classList.add('active');
+    applyFilters();
+  }
+
+  function filterByPrice(range, btnEl){
+    currentPriceRange = range;
+    document.querySelectorAll('.price-filter-btn').forEach(b => b.classList.remove('active-price'));
+    if (btnEl) btnEl.classList.add('active-price');
+    applyFilters();
+    closeMobileMenu();
+    document.getElementById('collection').scrollIntoView({behavior:'smooth'});
+  }
+
+  function priceInRange(price, range){
+    if (range === 'all') return true;
+    if (range === 'under1000') return price < 1000;
+    if (range === '1000to1500') return price >= 1000 && price <= 1500;
+    if (range === 'above1500') return price > 1500;
+    return true;
+  }
+
+  function applyFilters(){
+    const pieces = document.querySelectorAll('.piece');
+    let visibleCount = 0;
+    pieces.forEach(piece => {
+      const price = parseInt(piece.getAttribute('data-price'), 10) || 0;
+      const categoryMatch = currentCategory === 'all' || piece.getAttribute('data-category') === currentCategory;
+      const priceMatch = priceInRange(price, currentPriceRange);
+      const match = categoryMatch && priceMatch;
+      piece.style.display = match ? '' : 'none';
+      if(match) visibleCount++;
+    });
+    document.getElementById('empty-collection-msg').style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+
+  // Mobile menu drawer
+  function openMobileMenu(){
+    document.getElementById('mobile-menu').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileMenu(){
+    document.getElementById('mobile-menu').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>
